@@ -1,0 +1,167 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,500,700");
+/* Normalize CSS */
+/* Globals, Headers, and Footer */
+html, body {
+  font-size: 16px; }
+
+/**		Fonts	*/
+.ff-caslon {
+  font-family: 'Perpetua', sans-serif; }
+
+.ff-avenir {
+  font-family: 'Montserrat', sans-serif; }
+
+/**		Headings	 */
+.gwps-h1 {
+  font-size: 7.5em;
+  font-family: 'Perpetua', sans-serif;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-weight: 500; }
+
+.gwps-h2 {
+  font-size: 3.833em;
+  font-family: 'Perpetua', sans-serif;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  font-weight: 500; }
+
+.gwps-h3 {
+  font-size: 2.5em;
+  font-family: 'Perpetua', sans-serif;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  font-weight: 500; }
+
+.gwps-h4 {
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  font-weight: 700; }
+
+.gwps-h5 {
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-weight: 700; }
+
+.gwps-h6 {
+  font-size: 1.333em;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-weight: 700; }
+
+/**		Page Header		*/
+.gwps-page-header {
+  font-family: 'Perpetua', sans-serif;
+  font-size: 5em;
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: -0.03em; }
+
+/**		Navigation		*/
+.gwps-main-nav {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.25em;
+  line-height: 0.9;
+  letter-spacing: 0.03em; }
+
+.gwps-main-nav-dropdown {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.083em;
+  line-height: 0.9;
+  letter-spacing: 0.03em; }
+
+/**		Line-Height		*/
+.lh-1e {
+  line-height: 1em !important; }
+
+.lh-1e1 {
+  line-height: 1.1em !important; }
+
+.lh-1e2 {
+  line-height: 1.2em !important; }
+
+.lh-1e3 {
+  line-height: 1.3em !important; }
+
+.lh-1e4 {
+  line-height: 1.4em !important; }
+
+.lh-1e5 {
+  line-height: 1.5em !important; }
+
+.lh-1e6 {
+  line-height: 1.6em !important; }
+
+.lh-1e7 {
+  line-height: 1.7em !important; }
+
+.lh-1e8 {
+  line-height: 1.8em !important; }
+
+.lh-2e {
+  line-height: 2em !important; }
+
+.lh-2e1 {
+  line-height: 2.1em !important; }
+
+.lh-2e5 {
+  line-height: 2.5em !important; }
+
+header.navbar-main {
+  transition: box-shadow 0.3s ease-in-out; }
+  header.navbar-main nav .navbar-brand img {
+    max-width: 250px;
+    transition: max-width 0.3s ease-in-out; }
+  header.navbar-main nav .call img {
+    max-width: 35px;
+    transform: rotate(-40deg);
+    background-color: #032956;
+    border-radius: 50%;
+    padding: 7px;
+    transition: all 0.3s ease-in-out; }
+  header.navbar-main nav .call a:hover img {
+    background-color: #ca9c36; }
+  header.navbar-main nav ul.navbar-nav > li.nav-item > a {
+    color: #000;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out; }
+  header.navbar-main nav ul.navbar-nav > li.nav-item.active, header.navbar-main nav ul.navbar-nav > li.nav-item > a:hover {
+    color: #ca9c36 !important; }
+  @media screen and (max-width: 1200px) {
+    header.navbar-main nav ul.navbar-nav > li.nav-item > a {
+      font-size: 0.8em; } }
+  @media screen and (max-width: 992px) {
+    header.navbar-main nav .navbar-brand img {
+      max-width: 100px; }
+    header.navbar-main nav ul.navbar-nav > li.nav-item > a {
+      font-size: 0.8em; }
+    header.navbar-main nav .call .call-info {
+      display: none; } }
+
+header.navbar-main.on-scroll {
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  height: auto; }
+  header.navbar-main.on-scroll nav .navbar-brand img {
+    max-width: 150px; }
+  @media screen and (max-width: 992px) {
+    header.navbar-main.on-scroll nav .navbar-brand img {
+      max-width: 100px; } }
+  @media screen and (max-width: 576px) {
+    header.navbar-main.on-scroll nav .navbar-brand img {
+      max-width: 100px; } }
+
+@media screen and (max-width: 576px) {
+  header.navbar-main {
+    background-color: #fff; } }
+
+/* Pages */
