@@ -3,7 +3,44 @@ html, body {
 }
 
 body {
+	border-top: $red solid 10px;
+	border-bottom: $red solid 10px;
+}
+
+/**		Colors	*/
+.red {
+	color: $red;
+}
+.blue {
+	color: $blue;
+}
+.onyx {
+	color: $onyx;
+}
+.gray {
+	color: $light-gray;
+}
+.granite-gray {
+	color: $granite-gray;
+}
+.isabelline {
+	color: $isabelline;
+}
+
+.bg-red {
+	background-color: $red;
+}
+.bg-blue {
 	background-color: $blue;
+}
+.bg-onyx {
+	background-color: $onyx;
+}
+.bg-gray {
+	background-color: $light-gray;
+}
+.bg-isabelline {
+	background-color: $isabelline;
 }
 
 /**		Fonts	*/
@@ -60,12 +97,17 @@ body {
 		letter-spacing: 0.03em;
 		font-weight: 700;
 	}
+	&.normal {
+		font-size: 1.15em;
+		line-height: 1.2;
+		letter-spacing: 0.03em;
+		font-weight: 700;
+	}
 }
 
 /**		Body		*/
-.gwps-body {
+.gwps-body-text {
 	font-family: $font_avenir, sans-serif;
-	font-weight: 700;
 	line-height: 1.5;
 	letter-spacing: 0.03em;
 	&.xl {
@@ -88,13 +130,15 @@ body {
 .gwps-button {
 	font-family: $font_avenir, sans-serif;
 	padding: 0.5rem 2.5rem;
-	font-weight: 600;
 	font-size: 0.88em;
 	letter-spacing: 0.03em;
 	line-height: 1.5;
 	border: 1px solid;
 	border-radius: 0;
 	color: $red;
+	&.border-rounded {
+		border-radius: 20px;
+	}
 	&.large {
 		padding: 0.8rem 4.5rem;
 		font-size: 1.2rem;
@@ -124,8 +168,7 @@ body {
 }
 
 main {
-	// margin-top: 90px;
-	// transition: margin-top 0.3s ease-in-out;
+	background-color: $blue;
 }
 
 @media screen and (max-width: $break-md) {

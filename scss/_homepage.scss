@@ -1,18 +1,67 @@
-.home {
-    section {
-        div.text-wrapper {
-            max-width: 50%;
-            margin: auto;
+#home {
+    section.sec-one {
+        min-height: 80vh;
+        background-image: url("/assets/sample_bg.jpg");
+        background-repeat: no-repeat;
+        .banner-text-wrapper {
+            background-color: rgba(159, 42, 36, 0.8);
+            color: $white;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            font-size: 3em;
+            line-height: 1.5;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+            width: 80%;
         }
-        @media screen and (max-width: $break-md) {
-            div.text-wrapper {
-                max-width: 75%;
+        .button-options {
+            a.option {
+                border-radius: 100px;
+                background-color: rgba(255,255,255, 0.8);
+                text-align: left;
+                margin: 15px 0;
+                font-size: 1.5em;
+                line-height: 1.5;
+                letter-spacing: 0.05em;
+                font-weight: 700;
+                width: 80%;
+                > div:last-child {
+                    padding-left: 10px;
+                    border-left: 2px solid $white;
+                }
+                img {
+                    height: 70px;
+                }
             }
         }
-        @media screen and (max-width: $break-xs) {
-            div.text-wrapper {
-                max-width: 100%;
-            }
-        }
+    }
+
+    section.sec-two {
+        
+    }
+
+    section.sec-three {
+        // background-image: url("/assets/sample_bg.jpg");
+        background-repeat: no-repeat;
+    }
+
+    section.sec-four {
+
+    }
+
+    section.sec-five {
+
+    }
+
+    section.sec-six {
+
+    }
+
+    @media screen and (max-width: $break-md) {
+
+    }
+    @media screen and (max-width: $break-xs) {
+
     }
 }
