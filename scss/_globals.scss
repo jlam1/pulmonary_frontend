@@ -8,8 +8,14 @@ body {
 }
 
 /**		Colors	*/
+.white {
+	color: $white;
+}
 .red {
 	color: $red;
+}
+.light-blue {
+	color: $light-blue;
 }
 .blue {
 	color: $blue;
@@ -168,7 +174,11 @@ body {
 }
 
 main {
-	background-color: $blue;
+	background-color: $white;
+}
+
+hr.short {
+	display: none;
 }
 
 @media screen and (max-width: $break-md) {
@@ -176,5 +186,10 @@ main {
 }
 
 @media screen and (max-width: $break-xs) {
-
+	hr.short {
+		display: block;
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0));
+	}
 }

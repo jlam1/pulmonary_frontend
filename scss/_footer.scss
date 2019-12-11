@@ -1,7 +1,42 @@
 footer {
+	padding: 80px 0;
+	color: $white;
 	background-color: $blue;
+	.copyright {
+		margin-top: 150px;
+	}
+	ul.links {
+		li {
+			margin-bottom: 3px;
+			a {
+				color: $white;
+				text-decoration: none;
+			}
+			a:hover {
+				color: $red;
+			}
+		}
+	}
+	form#got-questions {
+		textarea {
+			background-color: rgba(52, 60, 112, 0.75);
+			resize: none;
+			border: none;
+			color: $red;
+		}
+		textarea:focus {
+			box-shadow: none;
+		}
+		button {
+			background-color: rgba(52, 60, 112, 1);
+			color: $white;
+			border: none;
+		}
+	}
 
-	@media screen and (max-width: $break-md) {
-
+	@media screen and (max-width: $break-sm) {
+		.copyright {
+			margin-top: 15px;
+		}
 	}
 }

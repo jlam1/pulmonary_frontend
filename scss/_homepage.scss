@@ -1,8 +1,10 @@
 #home {
     section.sec-one {
         min-height: 80vh;
-        background-image: url("/assets/sample_bg.jpg");
+        background-image: url("https://via.placeholder.com/1920x1080");
         background-repeat: no-repeat;
+        background-position: center center;
+        border-bottom: 20px solid $blue;
         .banner-text-wrapper {
             background-color: rgba(159, 42, 36, 0.8);
             color: $white;
@@ -34,28 +36,143 @@
                     height: 70px;
                 }
             }
+            @media screen and (max-width: $break-lg) {
+                a.option {
+                    font-size: 1em;
+                }
+            }
+            @media screen and (max-width: $break-md) {
+                a.option {
+                    font-size: 1em;
+                    margin: 15px auto;
+                }
+            }
+        }
+        @media screen and (max-width: $break-md) {
+            .banner-text-wrapper {
+                background-color: $white;
+                color: $blue;
+                position: relative;
+                font-size: 2.5em;
+                width: 100%;
+                text-align: center;
+                padding: 50px 20px !important;
+            }
+        }
+    }
+    @media screen and (max-width: $break-md) {
+        section.sec-one {
+            border-bottom: none;
         }
     }
 
     section.sec-two {
-        
+        .text-wrapper {
+            width: 75%;
+        }
+        @media screen and (max-width: $break-md) {
+            .text-wrapper {
+                width: 100%;
+                text-align: center;
+                padding: 20px 0;
+            }
+        }
     }
 
     section.sec-three {
-        // background-image: url("/assets/sample_bg.jpg");
+        background-color: $white;
+        // background-image: url("");
         background-repeat: no-repeat;
+        .medicines {
+            img {
+                max-width: 150px;
+            }
+            @media screen and (max-width: $break-sm) {
+                img {
+                    max-width: 250px;
+                }
+            }
+        }
     }
 
     section.sec-four {
-
+        // background-image: url("https://via.placeholder.com/1920x1080");
+        background-color: $white;
+        background-position: center center;
+        .top-part {
+            // background-image: url("https://via.placeholder.com/1920x1080");
+            background-repeat: no-repeat;
+            // min-height: 80vh;
+            background-position: center center;
+            position: relative;
+        }
+        .image-text {
+            padding: 100px 0 0 100px;
+            font-size: 3em;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        .middle-part {
+            position: relative;
+            top: -150px;
+            background-color: $white;
+            max-width: 50%;
+            margin: auto;
+            padding: 50px;
+        }
+        @media screen and (max-width: $break-md) {
+            .image-text {
+                padding: 0 15px;
+                position: relative;
+                text-align: center;
+                color: $red;
+                margin-bottom: 25px;
+                font-size: 2.5em;
+            }
+            .middle-part {
+                top: -50px;
+                max-width: 100%;
+            }
+        }
     }
 
     section.sec-five {
-
+        background-color: $red;
+        padding: 70px 0;
+        .progress-stats {
+            img {
+                max-width: 150px;
+            }
+            @media screen and (max-width: $break-md) {
+                .stat {
+                    margin-bottom: 30px;
+                }
+                img {
+                    max-width: 250px;
+                }
+            }
+        }
     }
 
     section.sec-six {
-
+        background-color: $white;
+        a.link {
+            display: inline-block;
+            text-decoration: none;
+            border-bottom: 3px solid $red;
+            font-weight: 700;
+        }
+        .column {
+            padding: 100px 75px;
+        }
+        @media screen and (max-width: $break-md) {
+            .column {
+                padding: 50px 25px;
+            }
+        }
     }
 
     @media screen and (max-width: $break-md) {

@@ -1,40 +1,15 @@
 $(document).ready(function () {
-
 	console.log("Document Ready");
 
-	// /* NAVBAR ON SCROLL */
-	// var scroll, main;
-	// $(window).on('load scroll', function() {    
-	// 	scroll = $(window).scrollTop();
-	// 	main = $("main").offset().top;
-	
-	// 	if (scroll > main) {
-	// 		$("header.navbar-main").addClass("on-scroll");
-	// 	} else {
-	// 		$("header.navbar-main").removeClass("on-scroll");
+	//Homepage circle progress
+	// $('.progress-circle-1').circleProgress({
+	// 	size: 100,
+	// 	value: $(this).data('progress-value'),
+	// 	fill: {
+	// 		color: '#9F2A24'
 	// 	}
+	// }).on('circle-animation-progress', function (event, progress, stepValue) {
+	// 	$(this).find('strong').text(stepValue.toFixed(2).substr(1));
 	// });
 
-	// /** AFFILIATIONS RESIZING BLOCKQUOTES BASED ON SIZE OF IMAGE BOX */
-	// var affElement, affHeight, affWidth;
-	// $(window).on('load resize', function() {
-	// 	affElement = $(".affiliations .aff-list .aff-wrapper .aff:first-child");
-	// 	affHeight = affElement.outerHeight();
-	// 	affWidth = affElement.outerWidth();
-	
-	// 	$(".affiliations .aff-list .aff-wrapper .aff blockquote").css({
-	// 		"min-height": affHeight,
-	// 		"width": (affWidth * 2)
-	// 	});
-	// });
-
-	// $(".affiliations .aff-list .aff-wrapper .aff").hover(
-	// 	function() {
-	// 		$(".affiliations .aff-list .aff-wrapper .aff").addClass("inactive");
-	// 		$(this).addClass("active").removeClass("inactive");
-	// 	}, function() {
-	// 		$(".affiliations .aff-list .aff-wrapper .aff").removeClass("inactive");
-	// 	}
-    // );
-    
 });
