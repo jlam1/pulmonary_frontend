@@ -7,6 +7,10 @@ body {
 	border-bottom: $red solid 10px;
 }
 
+main {
+	background-color: $white;
+}
+
 /**		Colors	*/
 .white {
 	color: $white;
@@ -57,139 +61,12 @@ body {
 	font-family: $font_avenir, sans-serif;
 }
 
-/**		Headings	 */
-.gwps-heading {
-	font-family: $font_avenir, sans-serif;
-	&.page-heading {
-		font-family: $font_caslon, sans-serif;
-		font-size: 5em;
-		font-weight: 500;
-		line-height: 0.9;
-		letter-spacing: -0.03em;
-	}
-	&.h1 {
-		font-size: 7.5em;
-		line-height: 1;
-		letter-spacing: 0.05em;
-		font-weight: 500;
-	}
-	&.h2 {
-		font-size: 3.833em;
-		line-height: 1;
-		letter-spacing: 0.03em;
-		font-weight: 500;
-	}
-	&.h3 {
-		font-size: 2.5em;
-		line-height: 1;
-		letter-spacing: 0.03em;
-		font-weight: 500;
-	}
-	&.h4 {
-		font-size: 2em;
-		line-height: 1.1;
-		letter-spacing: 0.02em;
-		font-weight: 700;
-	}
-	&.h5 {
-		font-size: 1.5em;
-		line-height: 1.2;
-		letter-spacing: 0.03em;
-		font-weight: 700;
-	}
-	&.h6 {
-		font-size: 1.333em;
-		line-height: 1.2;
-		letter-spacing: 0.03em;
-		font-weight: 700;
-	}
-	&.normal {
-		font-size: 1.15em;
-		line-height: 1.2;
-		letter-spacing: 0.03em;
-		font-weight: 700;
-	}
-}
-
-/**		Body		*/
-.gwps-body-text {
-	font-family: $font_avenir, sans-serif;
-	line-height: 1.5;
-	letter-spacing: 0.03em;
-	&.xl {
-		font-size: 1.12em;
-	}
-	&.l {
-		font-size: 1em;
-	}
-	&.m {
-		font-size: 0.88em;
-	}
-	&.sm {
-		font-size: 0.75em;
-	}
-	&.xs {
-		font-size: 0.69em;
-	}
-}
-
-.gwps-button {
-	font-family: $font_avenir, sans-serif;
-	padding: 0.5rem 2.5rem;
-	font-size: 0.88em;
-	letter-spacing: 0.03em;
-	line-height: 1.5;
-	border: 1px solid;
-	border-radius: 0;
-	color: $red;
-	&.border-rounded {
-		border-radius: 20px;
-	}
-	&.large {
-		padding: 0.8rem 4.5rem;
-		font-size: 1.2rem;
-	}
-	&.small {
-		padding: 0.5rem 2rem;
-		font-size: 0.5rem;
-	}
-	&:active {
-		opacity: 1.0;
-	}
-	&:hover {
-		opacity: 1.0;
-	}
-}
-
-.gwps-link {
-	color: $red;
-	opacity: 1.0;
-	&.active {
-		text-decoration-color: $red;
-	}
-	&:hover {
-		text-decoration: none;
-		opacity: 0.5;
-	}
-}
-
-main {
-	background-color: $white;
-}
-
-hr.short {
-	display: none;
-}
-
 @media screen and (max-width: $break-md) {
-
+	main {
+		margin-top: 120px;
+	}
 }
 
 @media screen and (max-width: $break-xs) {
-	hr.short {
-		display: block;
-		border: 0;
-		height: 1px;
-		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0));
-	}
+	
 }

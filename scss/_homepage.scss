@@ -1,6 +1,6 @@
-#home {
+main#home {
     section.sec-one {
-        min-height: 80vh;
+        // min-height: 80vh;
         background-image: url("https://via.placeholder.com/1920x1080");
         background-repeat: no-repeat;
         background-position: center center;
@@ -17,45 +17,6 @@
             font-weight: 500;
             width: 80%;
         }
-        .button-options {
-            a.option {
-                border-radius: 100px;
-                background-color: rgba(255,255,255, 0.8);
-                text-align: left;
-                margin: 15px 0;
-                font-size: 1.2em;
-                line-height: 1.5;
-                letter-spacing: 0.05em;
-                font-weight: 700;
-                width: 80%;
-                > div:last-child {
-                    padding-left: 10px;
-                    border-left: 2px solid $white;
-                }
-                img {
-                    height: 70px;
-                }
-            }
-            @media screen and (max-width: $break-lg) {
-                a.option {
-                    font-size: 1em;
-                    margin: 15px auto;
-                    padding: 5px 10px!important;
-                    width: 100%;
-                    img {
-                        height: 40px;
-                    }
-                }
-            }
-            @media screen and (max-width: $break-sm) {
-                a.option {
-                    font-size: 0.9em;
-                    img {
-                        margin-right: 0!important;
-                    }
-                }
-            }
-        }
         @media screen and (max-width: $break-lg) {
             .banner-text-wrapper {
                 font-size: 2.2em;
@@ -71,14 +32,12 @@
                 text-align: center;
                 padding: 50px 20px !important;
             }
-            .button-options {
-                padding: 50px 0;
-            }
         }
     }
     @media screen and (max-width: $break-md) {
         section.sec-one {
             border-bottom: none;
+            min-height: 0;
             .column-2 {
                 border-bottom: 15px solid $blue;   
             }
@@ -100,8 +59,9 @@
 
     section.sec-three {
         background-color: $white;
-        // background-image: url("");
+        // background-image: url("https://via.placeholder.com/1920x1080");
         background-repeat: no-repeat;
+        background-position: center center;
         .medicines {
             img {
                 max-width: 150px;
@@ -178,12 +138,6 @@
 
     section.sec-six {
         background-color: $white;
-        a.link {
-            display: inline-block;
-            text-decoration: none;
-            border-bottom: 3px solid $red;
-            font-weight: 700;
-        }
         .column {
             padding: 100px 75px;
         }
