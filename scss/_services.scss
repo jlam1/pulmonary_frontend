@@ -1,0 +1,30 @@
+main#services {
+
+    section.sec-one {
+
+    }
+
+    section.sec-two {
+        .list-text-wrapper {
+            .heading {
+                font-size: 2em;
+            }
+        }
+    }
+
+    section.sec-three {
+        padding: 150px 0;
+        .heading {
+            border-bottom: 1px solid #FFFFFF;
+            letter-spacing: 5px;
+        }
+    }
+    @media screen and (max-width: $break-md) {
+        section.sec-three {
+            padding: 50px 15px;
+            .heading {
+                font-size: 1.5em;
+            }
+        }
+    }
+}

@@ -43,7 +43,7 @@ header {
 			}
 		}
 		@media screen and (max-width: $break-md) {
-
+			
 		}
 	}
 
@@ -94,12 +94,20 @@ header {
 				border-bottom: 2px solid $red;
 			}
 		}
+
 	}
 
+	@media screen and (max-width: $break-sm) and (orientation: landscape) {
+		.main-navigation {
+			overflow-y: scroll;
+			height: 50vh;
+		}
+	}
+	
 	@media screen and (max-width: $break-md) {
 		a.navbar-brand > img {
-			height: 70px;
-			width: 70px;
+			height: 50px;
+			width: 50px;
 		}
 		.main-navigation {
 			display: flex;
@@ -139,9 +147,6 @@ header {
 		}
 	}
 
-	@media screen and (max-width: $break-sm) {
-
-	}
 }
 
 @media screen and (max-width: $break-md) {
@@ -154,11 +159,10 @@ header {
 		width: 100%;
 		background-color: $white;
 		border-top: $red solid 10px;
-	}
-}
-
-@media screen and (max-width: $break-xs) {
-	header {
-
+		padding: 0;
+		.navbar {
+			padding: 0 10px;
+			margin: 0;
+		}
 	}
 }

@@ -1,0 +1,58 @@
+main#information {
+
+    section.sec-one {
+        background-image: url("https://via.placeholder.com/1920x1080");
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-bottom: 20px solid $blue;
+        .banner-text-wrapper {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgba(159, 42, 36, 0.8);
+            color: $white;
+            padding: 30px 60px;
+            text-align: center;
+            .heading {
+
+            }
+        }
+        @media screen and (max-width: $break-md) {
+            .banner-text-wrapper {
+                display: none;
+            }
+        }
+    }
+
+    section.sec-three {
+        form {
+            input, textarea {
+                border-radius: 0;
+                border: 1px solid $granite-gray;
+                color: $granite-gray;
+            }
+            input {
+                height: 50px;
+            }
+            textarea {
+                resize: none;
+            }
+            input:focus, textarea:focus {
+                box-shadow: none;
+                border-color: $red;
+            }
+        }
+    }
+
+    section.sec-four {
+        .text-wrapper {
+            width: 75%;
+        }
+        @media screen and (max-width: $break-md) {
+            .text-wrapper {
+                width: 100%;
+            }
+        }
+    }
+
+}
