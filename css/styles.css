@@ -498,17 +498,29 @@ main#about section.sec-two {
   background-image: url("https://via.placeholder.com/1920x1080");
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 50vh; }
+  min-height: 60vh; }
   main#about section.sec-two .video-wrapper a.play-button i {
     font-size: 5em;
     color: #FFFFFF; }
 
 main#about section.sec-three {
-  background-image: url("https://via.placeholder.com/1920x1080");
+  background-color: #20285C;
   background-repeat: no-repeat;
   background-position: center center;
-  padding-bottom: 250px;
+  padding-bottom: 100px;
   border-bottom: 20px solid #20285C; }
+  main#about section.sec-three .text-wrapper {
+    position: relative;
+    top: -75px;
+    background-color: #FFFFFF;
+    max-width: 50%;
+    margin: auto;
+    padding: 50px; }
+  @media screen and (max-width: 992px) {
+    main#about section.sec-three .text-wrapper {
+      top: -50px;
+      max-width: 90%;
+      padding: 10px; } }
 
 @media screen and (max-width: 992px) {
   main#about section.sec-three {

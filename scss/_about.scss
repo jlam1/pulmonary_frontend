@@ -12,7 +12,7 @@ main#about {
         background-image: url("https://via.placeholder.com/1920x1080");
         background-repeat: no-repeat;
         background-position: center center;
-        min-height: 50vh;
+        min-height: 60vh;
 
         .video-wrapper {
             a.play-button {
@@ -25,11 +25,27 @@ main#about {
     }
 
     section.sec-three {
-        background-image: url("https://via.placeholder.com/1920x1080");
+        // background-image: url("https://via.placeholder.com/1920x1080");
+        background-color: $blue;
         background-repeat: no-repeat;
         background-position: center center;
-        padding-bottom: 250px;
+        padding-bottom: 100px;
         border-bottom: 20px solid $blue;
+        .text-wrapper {
+            position: relative;
+            top: -75px;
+            background-color: $white;
+            max-width: 50%;
+            margin: auto;
+            padding: 50px;
+        }
+        @media screen and (max-width: $break-md) {
+            .text-wrapper {
+                top: -50px;
+                max-width: 90%;
+                padding: 10px;
+            }
+        }
     }
     @media screen and (max-width: $break-md) {
         section.sec-three {
