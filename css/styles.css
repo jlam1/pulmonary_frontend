@@ -420,15 +420,6 @@ main#home section.sec-one {
     main#home section.sec-one .column-2 {
       border-bottom: 15px solid #20285C; } }
 
-main#home section.sec-two .text-wrapper {
-  width: 75%; }
-
-@media screen and (max-width: 992px) {
-  main#home section.sec-two .text-wrapper {
-    width: 100%;
-    text-align: center;
-    padding: 20px 0; } }
-
 main#home section.sec-three {
   background-color: #FFFFFF;
   background-repeat: no-repeat;
@@ -439,39 +430,42 @@ main#home section.sec-three {
     main#home section.sec-three .medicines img {
       max-width: 250px; } }
 
-main#home section.sec-four {
-  background-color: #FFFFFF;
-  background-position: center center; }
-  main#home section.sec-four .top-part {
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative; }
+main#home section.sec-four .top-part {
+  position: relative; }
+
+main#home section.sec-four .image-text {
+  padding: 100px 0 0 100px;
+  font-size: 3em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+@media screen and (max-width: 992px) {
   main#home section.sec-four .image-text {
-    padding: 100px 0 0 100px;
-    font-size: 3em;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0; }
-  main#home section.sec-four .middle-part {
+    padding: 0 15px;
+    position: relative;
+    text-align: center;
+    color: #9F2A24;
+    margin-bottom: 25px;
+    font-size: 2.5em; } }
+
+main#home section.sec-four-two {
+  background-color: #20285C;
+  background-position: center center; }
+  main#home section.sec-four-two .text-wrapper {
     position: relative;
     top: -150px;
     background-color: #FFFFFF;
-    max-width: 50%;
+    max-width: 70%;
     margin: auto;
     padding: 50px; }
   @media screen and (max-width: 992px) {
-    main#home section.sec-four .image-text {
-      padding: 0 15px;
-      position: relative;
-      text-align: center;
-      color: #9F2A24;
-      margin-bottom: 25px;
-      font-size: 2.5em; }
-    main#home section.sec-four .middle-part {
+    main#home section.sec-four-two .text-wrapper {
       top: -50px;
-      max-width: 100%; } }
+      max-width: 90%;
+      padding: 10px; } }
 
 main#home section.sec-five {
   background-color: #9F2A24;
@@ -515,21 +509,6 @@ main#about section.sec-three {
   background-position: center center;
   padding-bottom: 250px;
   border-bottom: 20px solid #20285C; }
-  main#about section.sec-three .text-wrapper {
-    position: relative;
-    top: -50px;
-    padding: 60px 30px;
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    background-color: #FFFFFF; }
-  @media screen and (max-width: 1200px) {
-    main#about section.sec-three .text-wrapper {
-      width: 80%; } }
-  @media screen and (max-width: 992px) {
-    main#about section.sec-three .text-wrapper {
-      width: 100%;
-      top: 0; } }
 
 @media screen and (max-width: 992px) {
   main#about section.sec-three {

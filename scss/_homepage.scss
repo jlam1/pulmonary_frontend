@@ -45,16 +45,7 @@ main#home {
     }
 
     section.sec-two {
-        .text-wrapper {
-            width: 75%;
-        }
-        @media screen and (max-width: $break-md) {
-            .text-wrapper {
-                width: 100%;
-                text-align: center;
-                padding: 20px 0;
-            }
-        }
+
     }
 
     section.sec-three {
@@ -75,14 +66,7 @@ main#home {
     }
 
     section.sec-four {
-        // background-image: url("https://via.placeholder.com/1920x1080");
-        background-color: $white;
-        background-position: center center;
         .top-part {
-            // background-image: url("https://via.placeholder.com/1920x1080");
-            background-repeat: no-repeat;
-            // min-height: 80vh;
-            background-position: center center;
             position: relative;
         }
         .image-text {
@@ -94,14 +78,6 @@ main#home {
             top: 0;
             bottom: 0;
         }
-        .middle-part {
-            position: relative;
-            top: -150px;
-            background-color: $white;
-            max-width: 50%;
-            margin: auto;
-            padding: 50px;
-        }
         @media screen and (max-width: $break-md) {
             .image-text {
                 padding: 0 15px;
@@ -111,9 +87,26 @@ main#home {
                 margin-bottom: 25px;
                 font-size: 2.5em;
             }
-            .middle-part {
+        }
+    }
+
+    section.sec-four-two {
+        // background-image: url("https://via.placeholder.com/1920x1080");
+        background-color: $blue;
+        background-position: center center;
+        .text-wrapper {
+            position: relative;
+            top: -150px;
+            background-color: $white;
+            max-width: 70%;
+            margin: auto;
+            padding: 50px;
+        }
+        @media screen and (max-width: $break-md) {
+            .text-wrapper {
                 top: -50px;
-                max-width: 100%;
+                max-width: 90%;
+                padding: 10px;
             }
         }
     }
